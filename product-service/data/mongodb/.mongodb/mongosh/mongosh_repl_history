@@ -1,0 +1,6 @@
+db.getUsers()
+db.createUser({ user: "productuser", pwd: "productpass", roles: [ { role: "readWrite", db: "product-service" }] })
+use product-service
+clear
+admin
+root
