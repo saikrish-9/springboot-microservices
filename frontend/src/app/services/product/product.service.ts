@@ -1,0 +1,34 @@
+import {Injectable} from '@angular/core';
+import {HttpClient} from "@angular/common/http";
+import {Observable} from "rxjs";
+import {Product} from "../../model/product";
+
+@Injectable({
+  providedIn: 'root'
+})
+export class ProductService {
+
+  constructor(private httpClient: HttpClient) {
+  }
+
+  getProducts(): Observable<Array<Product>> {
+    return this.httpClient.get<Array<Product>>('http://localhost:9000/api/product');
+  }
+
+  createProduct(product: Product): Observable<Product> {
+    return this.httpClient.post<Product>('http://localhost:9000/api/product', product);
+  }
+
+  getProductBySku(skuCode: string): Observable<Product> {
+    return this.httpClient.get<Product>(`http://localhost:9000/api/product/sku/${skuCode}`);
+  }
+
+  updateProductBySku(skuCode: string, product: Product): Observable<Product> {
+    return this.httpClient.put<Product>(`http://localhost:9000/api/product/sku/${skuCode}`, product);
+  }
+
+  deleteProductById(id: string): Observable<void> {
+    return this.httpClient.delete<void>(`http://localhost:9000/api/product/${id}`);
+  }
+  
+}
