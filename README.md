@@ -42,6 +42,7 @@ This is a complete e-commerce microservices solution with the following componen
 ```
 ## Demo Video
 
+https://github.com/user-attachments/assets/d0e2f976-ad66-4bf3-835b-8bf031d9581f
 
 
 
