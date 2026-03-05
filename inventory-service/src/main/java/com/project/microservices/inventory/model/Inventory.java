@@ -18,4 +18,9 @@ public class Inventory {
     private Long id;
     private String skuCode;
     private Integer quantity;
+
+    public Inventory(String skuCode, Integer quantity) {
+        this.skuCode = skuCode;
+        this.quantity = quantity;
+    }
 }
