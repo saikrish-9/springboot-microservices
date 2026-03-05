@@ -9,4 +9,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface InventoryClient {
     @RequestMapping(method= RequestMethod.GET, value = "/api/inventory")
     boolean isInStock(@RequestParam String skuCode, @RequestParam Integer quantity);
+    @RequestMapping(method= RequestMethod.PUT, value = "/api/inventory/update")
+    void updateInventory(@RequestParam String skuCode, @RequestParam Integer quantity);
 }

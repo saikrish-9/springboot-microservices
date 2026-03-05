@@ -19,7 +19,8 @@ public class Routes {
     @Bean
     public RouterFunction<ServerResponse> productServiceRoute() {
         return route("product_service")
-                .route(RequestPredicates.path("/api/product"),
+                .route(RequestPredicates.path("/api/product/**"),
+
                         HandlerFunctions.http("http://localhost:8080"))
                 .filter(CircuitBreakerFilterFunctions.circuitBreaker("productServiceCircuitBreaker",
                         URI.create("forward:/fallbackRoute")))
@@ -36,16 +37,25 @@ public class Routes {
                 .build();
     }
 
-
     @Bean
     public RouterFunction<ServerResponse> orderServiceRoute() {
         return route("order_service")
-                .route(RequestPredicates.path("/api/order"),
+                .route(RequestPredicates.path("/api/order/**"),
                         HandlerFunctions.http("http://localhost:8081"))
-                .filter(CircuitBreakerFilterFunctions.circuitBreaker("orderServiceCircuitBreaker",
-                        URI.create("forward:/fallbackRoute")))
                 .build();
     }
+
+
+//    @Bean
+//    RouterFunction<ServerResponse> orderServiceRoute() {
+//        return GatewayRouterFunctions.route("order_service")
+//                .route(RequestPredicates.path("/api/order/**"),
+//                        HandlerFunctions.http("http://localhost:8081"))
+//                .filter(CircuitBreakerFilterFunctions.circuitBreaker(
+//                        "orderServiceCircuitBreaker",
+//                        URI.create("forward:/fallbackRoute")))
+//                .build();
+//    }
 
     @Bean
     public RouterFunction<ServerResponse> orderServiceSwaggerRoute() {
@@ -60,7 +70,7 @@ public class Routes {
     @Bean
     public RouterFunction<ServerResponse> inventoryServiceRoute() {
         return route("inventory_service")
-                .route(RequestPredicates.path("/api/inventory"),
+                .route(RequestPredicates.path("/api/inventory/**"),
                         HandlerFunctions.http("http://localhost:8082"))
                 .filter(CircuitBreakerFilterFunctions.circuitBreaker("inventoryServiceCircuitBreaker",
                         URI.create("forward:/fallbackRoute")))
