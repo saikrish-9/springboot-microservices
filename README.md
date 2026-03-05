@@ -40,6 +40,10 @@ This is a complete e-commerce microservices solution with the following componen
     └──────────────────────────────┘
         Kafka Message Broker
 ```
+## Demo Video
+
+
+
 
 ## 🚀 Technologies & Stack
 
