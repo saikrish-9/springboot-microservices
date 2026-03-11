@@ -1,18 +1,26 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
     <modelVersion>4.0.0</modelVersion>
+
+    <!-- Spring Boot Parent -->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>3.2.5</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath/>
     </parent>
+
+    <!-- Project Info -->
     <groupId>com.project.microservices</groupId>
     <artifactId>spring-boot-microservices</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
-
     <name>spring-boot-microservices</name>
+
+    <!-- Modules -->
     <modules>
         <module>api-gateway</module>
         <module>product-service</module>
@@ -21,29 +29,48 @@
         <module>notification-service</module>
     </modules>
 
+    <!-- Properties -->
     <properties>
         <java.version>17</java.version>
         <spring-cloud.version>2023.0.3</spring-cloud.version>
     </properties>
+
+    <!-- Dependency Management -->
+    <dependencyManagement>
+        <dependencies>
+
+            <!-- Spring Cloud BOM -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+    <!-- Build -->
     <build>
         <plugins>
+
+            <!-- Spring Boot Maven Plugin -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>3.3.5</version>
+
                 <configuration>
                     <image>
                         <name>saikrish09/${project.artifactId}</name>
                         <builder>paketobuildpacks/builder-jammy-base</builder>
                     </image>
-                    <docker>
-                        <publishRegistry>
-                            <username>saikrish09</username>
-                            <password>${dockerPassword}</password>
-                        </publishRegistry>
-                    </docker>
                 </configuration>
+
             </plugin>
+
         </plugins>
     </build>
+
 </project>
