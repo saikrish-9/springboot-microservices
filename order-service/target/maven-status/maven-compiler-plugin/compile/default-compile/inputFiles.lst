@@ -1,10 +1,13 @@
-/Users/saikrishna/Downloads/order-service/src/main/java/com/project/microservices/order/OrderServiceApplication.java
-/Users/saikrishna/Downloads/order-service/src/main/java/com/project/microservices/order/client/InventoryClient.java
-/Users/saikrishna/Downloads/order-service/src/main/java/com/project/microservices/order/config/ObservationConfig.java
-/Users/saikrishna/Downloads/order-service/src/main/java/com/project/microservices/order/config/OpenAPIConfig.java
-/Users/saikrishna/Downloads/order-service/src/main/java/com/project/microservices/order/controller/OrderController.java
-/Users/saikrishna/Downloads/order-service/src/main/java/com/project/microservices/order/dto/OrderRequest.java
-/Users/saikrishna/Downloads/order-service/src/main/java/com/project/microservices/order/event/OrderPlaceEvent.java
-/Users/saikrishna/Downloads/order-service/src/main/java/com/project/microservices/order/model/Order.java
-/Users/saikrishna/Downloads/order-service/src/main/java/com/project/microservices/order/repository/OrderRepository.java
-/Users/saikrishna/Downloads/order-service/src/main/java/com/project/microservices/order/service/OrderService.java
+/Users/saikrishna/Desktop/SpringBoot Microservices/order-service/src/main/java/com/project/microservices/order/OrderServiceApplication.java
+/Users/saikrishna/Desktop/SpringBoot Microservices/order-service/src/main/java/com/project/microservices/order/client/InventoryClient.java
+/Users/saikrishna/Desktop/SpringBoot Microservices/order-service/src/main/java/com/project/microservices/order/config/ObservationConfig.java
+/Users/saikrishna/Desktop/SpringBoot Microservices/order-service/src/main/java/com/project/microservices/order/config/OpenAPIConfig.java
+/Users/saikrishna/Desktop/SpringBoot Microservices/order-service/src/main/java/com/project/microservices/order/controller/OrderController.java
+/Users/saikrishna/Desktop/SpringBoot Microservices/order-service/src/main/java/com/project/microservices/order/dto/OrderRequest.java
+/Users/saikrishna/Desktop/SpringBoot Microservices/order-service/src/main/java/com/project/microservices/order/dto/OrderResponse.java
+/Users/saikrishna/Desktop/SpringBoot Microservices/order-service/src/main/java/com/project/microservices/order/event/OrderPlaceEvent.java
+/Users/saikrishna/Desktop/SpringBoot Microservices/order-service/src/main/java/com/project/microservices/order/model/Order.java
+/Users/saikrishna/Desktop/SpringBoot Microservices/order-service/src/main/java/com/project/microservices/order/model/User.java
+/Users/saikrishna/Desktop/SpringBoot Microservices/order-service/src/main/java/com/project/microservices/order/repository/OrderRepository.java
+/Users/saikrishna/Desktop/SpringBoot Microservices/order-service/src/main/java/com/project/microservices/order/repository/UserRepository.java
+/Users/saikrishna/Desktop/SpringBoot Microservices/order-service/src/main/java/com/project/microservices/order/service/OrderService.java

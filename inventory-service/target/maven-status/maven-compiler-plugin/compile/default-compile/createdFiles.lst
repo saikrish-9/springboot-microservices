@@ -1,0 +1,7 @@
+com/project/microservices/inventory/config/OpenAPIConfig.class
+com/project/microservices/inventory/controller/InventoryController.class
+com/project/microservices/inventory/repository/InventoryRepository.class
+com/project/microservices/inventory/InventoryServiceApplication.class
+com/project/microservices/inventory/model/Inventory.class
+com/project/microservices/inventory/config/ObservationConfig.class
+com/project/microservices/inventory/service/InventoryService.class

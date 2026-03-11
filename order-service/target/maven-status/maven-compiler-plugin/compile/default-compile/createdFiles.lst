@@ -1,9 +1,13 @@
+com/project/microservices/order/dto/OrderResponse.class
 com/project/microservices/order/event/OrderPlaceEvent.class
 com/project/microservices/order/config/OpenAPIConfig.class
 com/project/microservices/order/OrderServiceApplication.class
+com/project/microservices/order/model/User.class
+com/project/microservices/order/repository/UserRepository.class
 com/project/microservices/order/dto/OrderRequest$UserDetails.class
 com/project/microservices/order/dto/OrderRequest.class
 com/project/microservices/order/service/OrderService.class
+com/project/microservices/order/config/ObservationConfig.class
 com/project/microservices/order/controller/OrderController.class
 com/project/microservices/order/model/Order.class
 com/project/microservices/order/repository/OrderRepository.class

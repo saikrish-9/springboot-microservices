@@ -1,7 +1,7 @@
-/Users/saikrishna/Downloads/inventory-service/src/main/java/com/project/microservices/inventory/InventoryServiceApplication.java
-/Users/saikrishna/Downloads/inventory-service/src/main/java/com/project/microservices/inventory/config/ObservationConfig.java
-/Users/saikrishna/Downloads/inventory-service/src/main/java/com/project/microservices/inventory/config/OpenAPIConfig.java
-/Users/saikrishna/Downloads/inventory-service/src/main/java/com/project/microservices/inventory/controller/InventoryController.java
-/Users/saikrishna/Downloads/inventory-service/src/main/java/com/project/microservices/inventory/model/Inventory.java
-/Users/saikrishna/Downloads/inventory-service/src/main/java/com/project/microservices/inventory/repository/InventoryRepository.java
-/Users/saikrishna/Downloads/inventory-service/src/main/java/com/project/microservices/inventory/service/InventoryService.java
+/Users/saikrishna/Desktop/SpringBoot Microservices/inventory-service/src/main/java/com/project/microservices/inventory/InventoryServiceApplication.java
+/Users/saikrishna/Desktop/SpringBoot Microservices/inventory-service/src/main/java/com/project/microservices/inventory/config/ObservationConfig.java
+/Users/saikrishna/Desktop/SpringBoot Microservices/inventory-service/src/main/java/com/project/microservices/inventory/config/OpenAPIConfig.java
+/Users/saikrishna/Desktop/SpringBoot Microservices/inventory-service/src/main/java/com/project/microservices/inventory/controller/InventoryController.java
+/Users/saikrishna/Desktop/SpringBoot Microservices/inventory-service/src/main/java/com/project/microservices/inventory/model/Inventory.java
+/Users/saikrishna/Desktop/SpringBoot Microservices/inventory-service/src/main/java/com/project/microservices/inventory/repository/InventoryRepository.java
+/Users/saikrishna/Desktop/SpringBoot Microservices/inventory-service/src/main/java/com/project/microservices/inventory/service/InventoryService.java
